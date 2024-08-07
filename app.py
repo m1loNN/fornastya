@@ -3,13 +3,16 @@ from flask import Flask, render_template, request, redirect, url_for
 import telebot
 import random
 import json
-from telegram import Update, InputFile
-from telegram.ext import Updater, CommandHandler, CallbackContext, Dispatcher
 import os
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from werkzeug.urls import url_quote_plus as url_quote
+
 
 app = Flask(__name__)
+
+WEBHOOK_URL = "https://fornastya-6yps.onrender.com"
+bot_token = "7441803509:AAF5YpnS7KKgCWM5TCxpQaMlYPiTo6YmiPA"
+
+bot = telebot.TeleBot(bot_token)
 
 
 @app.route('/')

@@ -42,3 +42,10 @@ def webhook():
     update = Update.de_json(request.get_json(force=True), updater.bot)
     dispatcher.process_update(update)
     return "ok", 200
+
+# Запуск установки вебхука и настройка обработчиков команд
+if __name__ == "__main__":
+    set_webhook()
+
+    # Запускаем веб сервер Flask
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
