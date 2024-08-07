@@ -1,0 +1,17 @@
+[
+    {"name": "Tier 2", "url": "images/fishdog.png"},
+    {"name": "Tier 1", "url": "images/dogfish.png"},
+    {"name": "Tier 3", "url": "images/piskazhop.png"},
+    {"name": "Tier 3", "url": "images/piskagriz.png"},
+    {"name": "Tier 1", "url": "images/kozyavka.png"},
+    {"name": "Tier 2", "url": "images/pukalka.png"},
+    {"name": "Tier 3", "url": "images/casipopa.png"},
+    {"name": "Tier 3", "url": "images/umpalumpa.png"},
+    {"name": "Tier 3", "url": "images/piska.png"},
+    {"name": "Tier 3", "url": "images/piskazavr.png"},
+    {"name": "Tier 3", "url": "images/spermik.png"},
+    {"name": "Tier 2", "url": "images/zalupka.png"},
+    {"name": "Tier S", "url": "images/krovo.png"},
+    {"name": "Tier 2", "url": "images/pupa.png"},
+    {"name": "Tier 1", "url": "images/capy.png"}
+]

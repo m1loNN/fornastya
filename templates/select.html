@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор картинки</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="background" style="background-image: url('{{ url_for('static', filename='images/city.gif') }}');"></div>
+    <div class="picture-container">
+        <img src="{{ url_for('static', filename=pictures[0].url.lstrip('/')) }}" alt="{{ pictures[0].name }}" class="picture">
+        <p class="picture-name">{{ pictures[0].name }}</p>
+        <img src="{{ url_for('static', filename='images/konf.gif') }}" class="confetti">
+    </div>
+    <a href="{{ url_for('index') }}" class="back-button">НАЗАД</a>
+    <form id="choose-form" action="{{ url_for('chosen') }}" method="POST" style="display: none;">
+        <input type="hidden" name="chosen_picture" id="chosen-picture" value="{{ pictures[0].name }}">
+    </form>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
